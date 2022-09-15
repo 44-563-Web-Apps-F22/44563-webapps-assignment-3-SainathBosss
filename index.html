@@ -2,6 +2,12 @@
 <html>
 <head>
     <title>LAB03</title>
+    <style>
+        table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+        </style>
 </head>
 <body> 
     <h1>Sainath Reddy Teneti </h1>
@@ -64,7 +70,19 @@
         </tr>
 </table>
 
+<hr>
+
+    <h3>Tricky</h3>
+    <blockquote>Best way in asp.net to force https for an entire site?</blockquote>
+    <a href ="https://stackoverflow.com/questions/47089/best-way-in-asp-net-to-force-https-for-an-entire-site">Quick-link to the source</a>
+        <pre>RewriteEngine on
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}</pre>
+
+
+
 </body>
 </html>
+
 
 
